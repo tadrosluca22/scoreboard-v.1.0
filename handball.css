@@ -1,0 +1,74 @@
+body{
+    background-color: purple;
+}
+
+#back{
+    grid-area: back;
+}
+#header{
+    grid-area: title;
+}
+#empty{
+    grid-area: empty;
+}
+#team1{
+    grid-area: t1;
+}
+#time{
+    grid-area: time;
+}
+#team2{
+    grid-area: t2;
+}
+#st1{
+    grid-area: st1;
+}
+#half{
+    grid-area: half;
+}
+#st2{
+    grid-area: st2;
+}
+#plust1{
+    grid-area: pt1;
+}
+#reset{
+    grid-area: reset;
+}
+#plust2{
+    grid-area: pt2;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+      "back back title title title title empty empty"
+      "t1 t1 t1 time time t2 t2 t2"
+      "st1 st1 st1 half half st2 st2 st2"
+      "pt1 pt1 reset reset reset reset pt2 pt2"
+      ;
+    grid-template-columns: repeat(8, 1fr);
+    grid-gap: 10px;
+    background-color: purple;
+    padding: 10px;
+  }
+  
+  .grid-item {
+    background-color: bisque;
+    padding: 20px;
+    height: 75px;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  ::placeholder {
+    color: black;
+    font-size: 20px;
+    text-align: center;
+  }
+  a:visited {
+    color: black;
+  }
+  a{
+    color: black;
+  }

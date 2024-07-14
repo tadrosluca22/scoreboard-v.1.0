@@ -1,0 +1,135 @@
+#timer {
+  font-size: 48px;
+  cursor: pointer;
+}
+
+#period {
+  font-size: 24px;
+}
+::placeholder {
+  color: black;
+  font-size: 20px;
+  text-align: center;
+}
+a:visited {
+  color: black;
+}
+a{
+  color: black;
+}
+body{
+  background-color: chocolate;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "back back title title title title empty empty"
+    "TeamOne TeamOne TeamOne timer timer TeamTwo TeamTwo TeamTwo"
+    "ScorePOne ScorePOne ScorePOne quarter quarter ScorePTwo ScorePTwo ScorePTwo"
+    "nOfFoulsT1 nOfFoulsT1 bonusT1 bonusT1 bonusT2 bonusT2 nOfFoulsT2 nOfFoulsT2" 
+    "P3T1 P2T1 P1T1 addFoulT1 addFoulT2 P1T2 P2T2 P3T2"
+    "reset reset reset reset reset reset reset reset ";
+  grid-template-columns: repeat(8, 1fr);
+  grid-gap: 10px;
+  background-color: chocolate;
+  padding: 10px;
+}
+
+.grid-item {
+  background-color: bisque;
+  padding: 20px;
+  height: 75px;
+  font-size: 30px;
+  text-align: center;
+}
+
+#back {
+  grid-area: back;
+}
+
+#header {
+  grid-area: title;
+}
+
+#empty {
+  grid-area: empty;
+}
+
+#t1 {
+  grid-area: TeamOne;
+}
+
+#timer {
+  grid-area: timer;
+}
+
+#t2 {
+  grid-area: TeamTwo;
+}
+
+#scoreT1 {
+  grid-area: ScorePOne;
+}
+
+#period {
+  grid-area: quarter;
+}
+
+#scoreT2 {
+  grid-area: ScorePTwo;
+}
+
+#foulsT1 {
+  grid-area: nOfFoulsT1;
+}
+
+#foulsT2 {
+  grid-area: nOfFoulsT2;
+}
+
+#bonusT1 {
+  grid-area: bonusT1;
+}
+
+#bonusT2 {
+  grid-area: bonusT2;
+}
+
+#p3T1 {
+  grid-area: P3T1;
+}
+
+#p2T1 {
+  grid-area: P2T1;
+}
+
+#p1T1 {
+  grid-area: P1T1;
+}
+
+#p3T2 {
+  grid-area: P3T2;
+}
+
+#p2T2 {
+  grid-area: P2T2;
+}
+
+#p1T2 {
+  grid-area: P1T2;
+}
+
+#addFoulT1 {
+  grid-area: addFoulT1;
+}
+
+#addFoulT2 {
+  grid-area: addFoulT2;
+}
+
+#reset {
+  grid-area: reset;
+}

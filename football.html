@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Scoreboard</title>
+    <link rel="stylesheet" href="football.css">
+    <link rel="shortcut icon" href="download (1).png" type="image/x-icon">
+</head>
+<body>
+    <div class="grid-container">
+        <a href="index.html" class="grid-item" id="back">BACK</a>
+        <h1 class="grid-item" id="header">Football Scoreboard</h1>
+        <div class="grid-item" id="empty"></div>
+        <input class="grid-item" id="t1" placeholder="Team 1">
+        <input class="grid-item" id="t2" placeholder="Team 2">
+        <div class="grid-item" id="scoreT1">0</div>
+        <div class="grid-item" id="stopwatchcontainer">
+            <h2 id="stopwatch">00:00</h2>
+            <button id="stopwatch-button">Start</button>
+        </div>
+        <div class="grid-item" id="scoreT2">0</div>
+        <button class="grid-item" id="p1t1" onclick="t1Goal()">GOAL</button>
+        <button class="grid-item" id="reset" onclick="reset()">RESET</button>
+        <button class="grid-item" id="p1t2" onclick="t2Goal()">GOAL</button>
+        <button class="grid-item" id="winner" onclick="checkWinner()">Check Winner</button>
+    </div>
+    <audio id="buzzer" src="mixkit-basketball-buzzer-1647.wav" hidden></audio>
+    <script src="football.js"></script>
+</body>
+</html>

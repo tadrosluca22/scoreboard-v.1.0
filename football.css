@@ -1,0 +1,77 @@
+body{
+    background-color: green;
+}
+#back{
+    grid-area: back;
+}
+#header{
+    grid-area: title;
+}
+#empty{
+    grid-area: empty;
+}
+#t1{
+    grid-area: TeamOne
+}
+#t2{
+    grid-area: TeamTwo;
+}
+#scoreT1{
+    grid-area: scoreT1;
+}
+#stopwatchcontainer{
+    grid-area: stopwatch;
+}
+#scoreT2{
+    grid-area: scoreT2;
+}
+#p1t1{
+    grid-area: goal1;
+}
+#reset{
+    grid-area: reset;
+}
+#p1t2{
+    grid-area: goal2;
+}
+#winner{
+    grid-area: winner;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+      "back back title title title title empty empty"
+      "TeamOne TeamOne TeamOne TeamOne TeamTwo TeamTwo TeamTwo TeamTwo"
+      "scoreT1 scoreT1 scoreT1 stopwatch stopwatch scoreT2 scoreT2 scoreT2"
+      "goal1 goal1 reset reset reset reset goal2 goal2"
+      "winner winner winner winner winner winner winner winner"
+      ;
+    grid-template-columns: repeat(8, 1fr);
+    grid-gap: 10px;
+    background-color: green;
+    padding: 10px;
+  }
+  
+  .grid-item {
+    background-color: bisque;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+  ::placeholder {
+    color: black;
+    font-size: 20px;
+    text-align: center;
+  }
+  a:visited {
+    color: black;
+  }
+  a{
+    color: black;
+  }
+  
+#stopwatch-button{
+    background-color: #4CAF50;
+    height: 30px;
+}

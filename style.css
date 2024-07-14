@@ -1,0 +1,31 @@
+body{
+    background-color: bisque;
+}
+h1{
+    text-align: center;
+}
+h2 {
+    font-size: 30px;
+    margin-left: 50px;
+}
+img{
+    background-color: bisque;
+    height: 50px;
+    width: 60px;
+}
+.tennis {
+    display: inline-block;
+  }
+a:visited {
+    color: black;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+hr {
+    border: none;
+    border-top: 10px solid black;
+    height: 0;
+    margin: 20px 0;
+  }

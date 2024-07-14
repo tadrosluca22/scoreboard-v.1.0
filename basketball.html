@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basketball Scoreboard</title>
+    <link rel="stylesheet" href="basketball.css">
+    <link rel="shortcut icon" href="MiniSC.png" type="image/x-icon">
+</head>
+<body>
+    <div class="grid-container">
+        <a href="index.html" class="grid-item" id="back">BACK</a>
+        <h1 class="grid-item" id="header">Basketball Scoreboard</h1>
+        <div class="grid-item" id="empty"></div>
+        <input class="grid-item" id="t1" placeholder="Team 1">
+        <div class="grid-item" id="timer">10:00</div>
+        <input class="grid-item" id="t2" placeholder="Team 2">
+        <div class="grid-item" id="scoreT1">0</div>
+        <div class="grid-item" id="period">Period: 1</div>
+        <div class="grid-item" id="scoreT2">0</div>
+        <div class="grid-item" id="foulsT1">Fouls: 0</div>
+        <div class="grid-item" id="bonusT1">BONUS</div>
+        <div class="grid-item" id="bonusT2">BONUS</div>
+        <div class="grid-item" id="foulsT2">Fouls: 0</div>
+        <button class="grid-item" id="p3T1" onclick="add3T1()">+3</button>
+        <button class="grid-item" id="p2T1" onclick="add2T1()">+2</button>
+        <button class="grid-item" id="p1T1" onclick="add1T1()">+1</button>
+        <button class="grid-item" id="addFoulT1" onclick="addFT1() ; BonusCheck1()">Foul</button>
+        <button class="grid-item" id="p3T2" onclick="add3T2()">+3</button>
+        <button class="grid-item" id="p2T2" onclick="add2T2()">+2</button>
+        <button class="grid-item" id="p1T2" onclick="add1T2()">+1</button>
+        <button class="grid-item" id="addFoulT2" onclick="addFT2() ; BonusCheck2()">Foul</button>
+        <button class="grid-item" id="reset" onclick="reset()">RESET</button>
+        </div>
+
+
+
+    <audio id="buzzer" src="mixkit-basketball-buzzer-1647.wav" hidden></audio>
+    <script src="basketball.js"></script>
+</body>
+</html>     
